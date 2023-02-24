@@ -3,8 +3,11 @@ a = float(input("Nhap vao gia tri a: "))
 b = float(input("Nhap vao gia tri b: "))
 c = float(input("Nhap vao gia tri c: "))
 if(a==0):
-    x = -c/b
-    print("Phuong trinh co 1 nghiem duy nhat:", x)
+    if(b==0):
+        print("Phuong trinh vo nghiem")
+    else:
+        x = -c/b
+        print("Phuong trinh co 1 nghiem duy nhat:", x)
 elif (b==0):
     y = -c/a
     print("Phuong trinh co nghiem kep:", y)
