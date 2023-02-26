@@ -4,7 +4,10 @@ b = float(input("Nhap vao gia tri b: "))
 c = float(input("Nhap vao gia tri c: "))
 if(a==0):
     if(b==0):
-        print("Phuong trinh vo nghiem")
+        if (c==0):
+            print("Phuong trinh vo so nghiem")
+        else:
+            print("Phuong trinh vo nghiem")
     else:
         x = -c/b
         print("Phuong trinh co 1 nghiem duy nhat:", x)
